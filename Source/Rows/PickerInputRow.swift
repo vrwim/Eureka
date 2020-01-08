@@ -70,7 +70,7 @@ open class _PickerInputCell<T> : Cell<T>, CellType, UIPickerViewDataSource, UIPi
         }
 
         if #available(iOS 13.0, *) {
-            textLabel?.textColor = row.isDisabled ? .tertiaryLabel : .label
+            // textLabel?.textColor = row.isDisabled ? .tertiaryLabel : .label
         } else {
             textLabel?.textColor = row.isDisabled ? .gray : .black
         }

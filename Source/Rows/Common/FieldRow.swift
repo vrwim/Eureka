@@ -230,7 +230,7 @@ open class _FieldCell<T> : Cell<T>, UITextFieldDelegate, TextFieldCell where T: 
             textLabel?.text = nil
             titleLabel?.text = row.title
             if #available(iOS 13.0, *) {
-                titleLabel?.textColor = row.isDisabled ? .tertiaryLabel : .label
+                // titleLabel?.textColor = row.isDisabled ? .tertiaryLabel : .label
             } else {
                 titleLabel?.textColor = row.isDisabled ? .gray : .black
             }
@@ -239,7 +239,7 @@ open class _FieldCell<T> : Cell<T>, UITextFieldDelegate, TextFieldCell where T: 
         textField.text = row.displayValueFor?(row.value)
         textField.isEnabled = !row.isDisabled
         if #available(iOS 13.0, *) {
-            textField.textColor = row.isDisabled ? .tertiaryLabel : .label
+            // textField.textColor = row.isDisabled ? .tertiaryLabel : .label
         } else {
             textField.textColor = row.isDisabled ? .gray : .black
         }

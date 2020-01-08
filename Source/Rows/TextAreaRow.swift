@@ -88,7 +88,7 @@ open class _TextAreaCell<T> : Cell<T>, UITextViewDelegate, AreaCell where T: Equ
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
         placeholderLabel.numberOfLines = 0
         if #available(iOS 13.0, *) {
-            placeholderLabel.textColor = UIColor.tertiaryLabel
+            // placeholderLabel.textColor = UIColor.tertiaryLabel
         } else {
             placeholderLabel.textColor = UIColor(white: 0, alpha: 0.22)
         }
@@ -139,7 +139,7 @@ open class _TextAreaCell<T> : Cell<T>, UITextViewDelegate, AreaCell where T: Equ
         detailTextLabel?.text = nil
         textView.isEditable = !row.isDisabled
         if #available(iOS 13.0, *) {
-            textView.textColor = row.isDisabled ? .tertiaryLabel : .label
+            // textView.textColor = row.isDisabled ? .tertiaryLabel : .label
         } else {
             textView.textColor = row.isDisabled ? .gray : .black
         }
